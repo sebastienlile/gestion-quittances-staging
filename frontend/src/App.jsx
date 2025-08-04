@@ -173,7 +173,7 @@ const envoyerQuittance = async () => {
     setLoading(true);
     setMessage('');
     try {
-      await axios.post('https://quittances-backend.onrender.com/api/envoyer-quittance', {
+      await axios.post('https://quittances-backend-staging.onrender.com/api/envoyer-quittance', {
         civilite,
         emailLocataire,
         nomLocataire,
