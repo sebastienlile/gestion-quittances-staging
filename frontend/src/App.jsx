@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { supabase } from './supabaseClient';
+import { supabase } from './supabaseClient.staging';
 
 function App() {
   const [civilite, setCivilite] = useState('');
