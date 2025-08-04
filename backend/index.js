@@ -7,8 +7,10 @@ const cors = require('cors');
 
 const app = express();
 app.use(express.json());
+const cors = require('cors');
+
 app.use(cors({
-  origin: 'https://quittances-frontend-staging.onrender.com',
+  origin: process.env.FRONTEND_ORIGIN || 'https://quittances-frontend.onrender.com',
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type']
 }));
