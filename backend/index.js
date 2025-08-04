@@ -10,7 +10,7 @@ app.use(express.json());
 
 
 app.use(cors({
-  origin: process.env.FRONTEND_ORIGIN || 'https://quittances-frontend.onrender.com',
+  origin: process.env.FRONTEND_ORIGIN || 'https://quittances-frontend-staging.onrender.com',
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type']
 }));
